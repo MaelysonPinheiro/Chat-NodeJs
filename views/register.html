@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro MaxBook</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="shortcut icon" href="img/iconem.png" type="image/x-icon">
+</head>
+<body>
+    <h2>Registro</h2>
+    <form id="registerForm" method="post" action="/register">
+        <div id="user">
+          <label for="username">Nome de usuário:</label>
+          <input type="text" id="username" name="username" minlength="6" required>
+        </div>
+        <div>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" minlength="6" required>
+        </div>
+        <div>
+          <input type="submit" value="Registrar" id="button">
+        </div>
+      </form>      
+    <p id="error" style="color: red;"></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social</title>
+    <link rel="shortcut icon" href="img/iconem.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="user-area">
+        <div class="user-info">
+          <img src="img/usuarioicon.png" alt="User Photo" class="user-photo" onclick="toggleMenu()">
+          <span class="user-name">Maelyson</span>
+        </div>
+        <div class="menu-container" id="menuContainer">
+          <ul class="menu">
+            <li>Home</li>
+            <li>Profile</li>
+            <li>Settings</li>
+            <li><a href="#" id="logout">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="usuarios" id="user1">
+        <img src="img/gusttavol.jpg" alt="">
+        <a href="">Gusttavo</a>
+    </div>  
+    <div class="chat-container">
+        <div class="chat-header">
+            Chat com Gusttavo
+        </div>
+        <div id="chat-messages">
+        </div>
+        <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+        <div class="file-input-container">
+            <input type="file" class="file-input" id="imageInput" accept="image/*">
+            <button class="custom-button" onclick="openFile()">Imagem</button>
+          </div><br>
+        <Button id="send-button">Enviar</Button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Maelyson Machado Pinheiro</p>
+      </footer>
+    <script src="index.js"></script>
+</body>
+</html>
